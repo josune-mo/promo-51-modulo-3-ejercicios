@@ -1,11 +1,13 @@
-import '../styles/App.scss';
+import "../styles/App.scss";
 
-function App() {
-  return (
-    <div>
-      Escribe aquí tu HTML...
-    </div>
-  )
+
+function DarkMode() {
+
+  return <>
+  <button>Des/activar el dark mode</button>
+  <p>Tienes activado el dark mode</p>
+  <p>Lorem ipsum</p>
+  </>
 }
 
-export default App;
+export default DarkMode;

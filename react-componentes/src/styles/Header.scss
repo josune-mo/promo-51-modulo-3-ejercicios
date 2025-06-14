@@ -1,0 +1,112 @@
+@use "./core/variables" as vars;
+
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__nav-1 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header__nav-image {
+  width: 100%;
+  margin: 1rem;
+  color: vars.$color-tertiary;
+}
+
+.header__nav-2 {
+  display: none;
+}
+
+.header__button-1 {
+  background-color: vars.$color-tertiary;
+  color: vars.$color-primary;
+  font-family: vars.$font-family;
+  border: none;
+  box-shadow: none;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+.header__button-1:hover {
+  background-color: vars.$color-quaternary;
+  color: vars.$color-tertiary;
+}
+
+.header__section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: -5rem;
+}
+
+.header__section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  gap: 4rem;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .header__nav-image {
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  .header__section-1 {
+    padding-top: 2rem;
+  }
+
+  .header__section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 3rem;
+    padding: 6rem;
+  }
+
+}
+
+@media all and (min-width: 1024px) {
+  .header__nav-1 {
+    display: none;
+  }
+
+  .header__nav-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
+    padding: 4rem;
+  }
+
+  .header__nav-2 a {
+    text-decoration: none;
+    color: vars.$color-tertiary;
+  }
+
+  .header__section-1 {
+    margin-bottom: -10rem;
+
+  }
+
+  .header__section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 4rem;
+    padding: 12rem 8rem 16rem 8rem;
+
+  }
+
+
+
+}

@@ -1,0 +1,10 @@
+@use 'core/reset';
+
+.completado {
+    text-decoration: line-through;
+
+}
+
+.pendiente{
+    color: aqua;
+}
